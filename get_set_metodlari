@@ -1,0 +1,66 @@
+#include <iostream>
+
+using namespace std;
+
+    class Kisi{
+    private:
+        string ad;
+        int yas;
+        double boy;
+
+
+        public:
+
+        void setAd(string ad){
+            this->ad=ad;
+			
+        }
+
+        void setYas(int yas){
+        this->yas=yas;
+        }
+
+        void setBoy(double boy){
+        this->boy=boy;
+        }
+
+        string getAd()
+        {
+            return ad;
+        }
+
+        int getYas(){
+            return yas;
+        }
+
+        double getBoy(){
+        return boy;
+        }
+};
+
+
+
+
+
+
+
+
+int main(){
+	int ad;
+
+    Kisi nesne1;
+    nesne1.setAd("oguzhan");
+    nesne1.setYas(20);
+    nesne1.setBoy(180);
+    
+    cout<<"Ad"<<" "<<nesne1.getAd()<<endl;
+    cout<<"Yas"<<" "<<nesne1.getYas()<<endl; 
+    cout<<"Boy"<<" "<<nesne1.getBoy()<<endl;
+
+
+
+
+
+
+    return 0;
+}
