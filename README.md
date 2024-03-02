@@ -1,2 +1,2 @@
-# OOP_C-
+# OOP_C++
 OOP dersinde öğrendigim ve ayrıca kendi çalışmalarımın olduğu repodur.
