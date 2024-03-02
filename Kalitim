@@ -1,0 +1,49 @@
+#include <iostream>
+
+using namespace std;
+//Kalýtým Miras Alma Ýþlemleri
+
+class Kisi{ // base ana sýnýf
+public:
+
+    string ad;
+    string soyad;
+    int yas;
+
+};
+
+
+class ogrenci: public Kisi{
+public:
+    int maas;//drive kopya :D
+};
+
+class egitmen:public Kisi{ //drive kopya
+public:
+    int para;
+};
+
+
+
+
+int main()
+{
+    ogrenci o1;
+    o1.ad="oguz";
+    o1.soyad="kdm";
+    o1.yas=20;
+    o1.maas=2000;
+
+    egitmen o2;
+    o2.ad="aliþ";
+    o2.soyad="sayar";
+    o2.yas=20;
+    o2.para=3000;
+
+    cout<<o1.ad<<endl;
+    cout<<o1.soyad<<endl;
+    cout<<o1.yas<<endl;
+    cout<<o1.maas<<endl;
+
+    return 0;
+};
