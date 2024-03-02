@@ -1,0 +1,91 @@
+/*
+#include <iostream>
+#include <locale.h>
+using namespace std;
+
+	class kisi{
+		public:
+		int maas;
+		string ad;
+		string soyad;
+	};
+
+
+int main() {
+	
+	setlocale(LC_ALL , " ");
+	
+	kisi *ptrNesne = new kisi();
+	ptrNesne->ad="Oguz";
+	ptrNesne->soyad="Kademli";
+	ptrNesne->maas=1250;
+	
+	
+	
+	cout<<ptrNesne->ad<<endl;
+	cout<<ptrNesne->soyad<<endl;
+	cout<<ptrNesne->maas<<endl;
+	
+	
+	
+	
+	
+	return 0;
+};
+*/
+
+
+#include <iostream>
+#include <locale.h>
+using namespace std;
+
+	class kisi{
+		public:
+		int maas;
+		string ad;
+		string soyad;
+		
+			
+	};
+void Yazdir(kisi *nesne){
+	cout<<"Ad: "<< nesne->ad <<endl;
+	cout<<"Soyad: "<< nesne->soyad <<endl;
+	cout<<"Maas: "<< nesne->maas <<endl;
+		
+		
+	}
+
+
+int main() {
+	
+	setlocale(LC_ALL , " ");
+	
+	kisi *ptrNesne = new kisi();
+	ptrNesne->ad="Oguz";
+	ptrNesne->soyad="Kademli";
+	ptrNesne->maas=1250;
+	Yazdir(ptrNesne);
+		
+	return 0;
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
