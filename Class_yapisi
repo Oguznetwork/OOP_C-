@@ -1,0 +1,37 @@
+#include <iostream>
+#include <locale.h>
+
+using namespace std;
+class proje{
+		public:
+        string ad;
+        int fiyat;
+        string projeismi;
+
+
+    };
+
+
+
+
+int main()
+{
+	setlocale(LC_ALL,"Turkish");
+    cout << "Classlar Dersi :)" << endl;
+
+
+    proje nes1;
+    nes1.ad="Oguz";
+    nes1.fiyat=10000;
+    nes1.projeismi="Giriþimcililer Ýle Yatýrýmcýlarýn Bulusma Noktasý :)";
+
+   
+    cout<<"ad:"<<nes1.ad<<endl;
+    cout<<"fiyat:"<<nes1.fiyat<<endl;
+    cout<<"proje ismi:"<<nes1.projeismi;
+        
+
+    
+
+    return 0;
+}
