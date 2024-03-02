@@ -1,0 +1,62 @@
+#include <iostream>
+
+using namespace std;
+//Çoklu kalýtým
+
+    class Ders{
+public:
+    string dersAdi;
+    int ortalama;
+
+    };
+
+    class Adres{
+public:
+    string mah;
+    string sk;
+    string sehir;
+    };
+
+    class ogrenci: public Ders , public Adres{
+        public:
+            string ad;
+            string soyad;
+            string bolum;
+
+    };
+
+
+
+
+
+int main()
+{
+    cout << "Hello world!" << endl;
+    ogrenci o1;
+    o1.ad="oguz";
+    o1.sehir="izmir";
+    o1.dersAdi="Yazilim";
+    o1.ortalama=80;
+
+    cout<<"ad:       -->  "<<o1.ad<<endl;
+    cout<<"sehir:    -->  "<<o1.sehir<<endl;
+    cout<<"ders adi: -->  "<<o1.dersAdi<<endl;
+    cout<<"ortalama: -->  "<<o1.ortalama<<endl;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    return 0;
+}
