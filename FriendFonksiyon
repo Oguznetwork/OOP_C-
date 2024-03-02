@@ -1,0 +1,42 @@
+#include <iostream>
+
+using namespace std;
+
+    class Kisi{
+    private:
+
+    string ad;
+    string soyad;
+    int maas;
+
+    public:
+    Kisi(string ad,string soyad ,int maas){
+    this->ad=ad;
+    this->soyad=soyad;
+    this->maas=maas;
+    }
+
+	friend void yazdir(Kisi k1); // friend ile private olan degerlere ulaþtýrabiliriz
+	// mesela burda yazdir fonks class dýþýnda o yuzden private ulaþamaz
+	// ama friend ile arkadaþ ederiz classý ve dýþardan ulaþmasýna imkan veririz
+	// baþka class olsaydý örnek friend class hesapla bu þekildede baþka bir clasý bu clasla arkadaþ ederiz  ve private olan degerlere ulaþmasýný saglarýz.
+	
+	
+};
+	
+
+void yazdir(Kisi k1){
+	cout<<k1.ad<<endl;
+	cout<<k1.soyad<<endl;
+	cout<<k1.maas<<endl;
+	
+}
+
+int main()
+{
+    cout << "Hello world!" << endl;
+    Kisi k1  ( "mustafa","kdm",5000);  
+	yazdir(k1);
+
+    return 0;
+}
