@@ -1,0 +1,56 @@
+#include <iostream>
+
+using namespace std;
+
+
+namespace oguz{
+    int x;
+    string ad;
+
+    void fonk(){
+    cout<<"selam"<<endl;}
+}
+
+
+namespace ali{
+    int x;
+    string ad;
+
+    void fonk(){
+    cout<<"selam"<<endl;}
+
+
+}
+
+
+
+int main()
+{
+    cout << "Hello world!" << endl;
+
+
+    oguz::ad="oguz";
+    oguz::x=20;
+
+    cout<<oguz::ad<<endl;
+    cout<<oguz::x<<endl;
+    oguz::fonk();
+
+
+    ali::ad="ali";
+    ali::x=21;
+
+    cout<<ali::ad<<endl;
+    cout<<ali::x<<endl;
+    ali::fonk();
+
+
+
+
+
+
+
+
+
+    return 0;
+}
