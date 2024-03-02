@@ -1,0 +1,34 @@
+#include <iostream>
+
+using namespace std;
+
+struct Kisi{
+string ad;
+int yas;
+};
+
+
+
+int main()
+{
+    cout << "Hello world!" << endl;
+
+   // pointer ile struclarý kullanma
+
+   Kisi nes1;
+   Kisi *ptr=&nes1;
+
+   ptr->ad="ahmet";
+   ptr->yas=30;
+
+    nes1.ad="Oguz"; // ptr->ad="oguz" bunlar ayný þey bu þekil güncelleme yapabiliriz.
+
+   cout<<ptr->ad<<endl,
+   cout<<ptr->yas<<endl;
+   
+
+
+
+
+    return 0;
+}
