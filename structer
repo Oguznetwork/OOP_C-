@@ -1,0 +1,71 @@
+/*
+#include<iostream>
+
+using namespace std;
+
+struct kisi{
+string ad;
+int yas;
+};
+
+void Yazdir(kisi nesne){
+cout<<"ad:"<<nesne.ad<<endl;
+cout<<"yas:"<<nesne.yas<<endl;
+}
+
+
+int main(){
+
+    kisi nes1;
+    nes1.ad="oguz";
+    nes1.yas=20;
+    Yazdir(nes1);
+
+
+
+return 0;}
+
+*/
+
+#include<iostream>
+using namespace std;
+
+
+	struct Bilgi{
+		string ad;
+		int yas;
+	};
+	void yaz(Bilgi *ptr){
+	// ptr=&nes2;
+		cout<<"ad:"<<ptr->ad<<endl;
+		cout<<"yas"<<ptr->yas<<endl;
+		
+		
+	}
+
+int main(){
+	Bilgi nes2;
+	nes2.ad="Kademli";
+	nes2.yas=20;
+	yaz(&nes2); //yaz(nes2) yaparsan hata verir *ptr adres tutar sadece
+	
+	
+	// yaz üstte olup o fonk içinde yeni bir ad tanýmlarsak bütün adlar o isim olur
+	// ama yazdir fonk üstte olur yaz aþada olursa yeni ad tanýmlarsak o fonk içinde sadece yazdýrda olur yazda deðiþmez
+	//aradaki fark bu 
+	
+	
+	
+	return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
