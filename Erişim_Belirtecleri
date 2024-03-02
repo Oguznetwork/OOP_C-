@@ -1,0 +1,41 @@
+#include <iostream>
+#include<locale.h>
+using namespace std;
+class kisi{
+    public: // public dýþardan eriþilme özelligi verir
+    int yas=20;
+    string isim="oguz";
+
+    private://dýþardan eriþilmeme özelligi verir
+        int maas=1250;
+        // private olan özelliklere sadece class içine yazdýgýmýz kodlarla ulaþabiliriz
+
+
+      /*  void yakala(){
+            cout<<yas<<" "<<isim<<" "<<maas;
+            // burda bu þekil býrakýrsak olmaz bunu public olarak almamýz gerekir
+        }
+        */
+        public: //fonksiyonu public yaptýk ve dýþardan ulasýrýz böylece maasý yakalarýz
+        void yakala(){ // bu þekil kýsaca private olan degerý publice cevirip dýþardan yakalarýz
+        cout<<yas<<" "<<isim<< " "<<maas;
+        }
+
+
+
+};
+
+int main()
+{
+    setlocale(LC_ALL , "Turkish");
+    //Eriþim Belirleyiciler Public,Private,Protected;
+
+        kisi nesne1;
+        nesne1.yakala();
+
+
+
+
+
+     return 0;
+}
