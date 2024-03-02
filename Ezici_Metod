@@ -1,0 +1,46 @@
+#include <iostream>
+
+using namespace std;
+class Kisi{
+public:
+    string ad;
+    string soyad;
+    int yas;
+    Kisi( string ad, string soyad, int yas) :ad(ad),soyad(soyad),yas(yas)
+    {
+        cout<<"kisi sinifinin yapici metodu çalisti"<<endl;
+
+
+    }
+
+    void yazdir()
+    {
+        cout<<"ad: "<<ad<<endl;
+        cout<<"soyad: "<<soyad<<endl;
+        cout<<"yas: "<<yas<<endl;
+    }
+
+};
+
+class ogrenci: public Kisi{
+public:
+int ortalama;
+ogrenci(string ad,string soyad,int yas,int ortalama): ortalama(ortalama), Kisi(ad,soyad,yas)
+{
+cout<<"ogrenci sinifinin yapici metodu calisti"<<endl;
+
+
+};
+
+
+
+
+int main(){
+
+
+    cout << "Hello world!" << endl;
+
+    Kisi k1("Mustafa","Yilmaz",18);
+    k1.yazdir();
+
+return 0;}
