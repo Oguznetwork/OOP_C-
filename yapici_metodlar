@@ -1,0 +1,34 @@
+#include <iostream>
+
+using namespace std;
+
+class Kisi{
+
+	public:
+	string ad;
+	string soyad;
+	int yas;
+
+	Kisi(){
+
+	cout<<"parametresiz yapici metot calisti"<<endl;
+	}
+
+	Kisi(string a){
+		ad=a;
+		cout<<a<<" "<<"""parametreli yapici metot calisti"<<endl;
+	}
+
+
+};
+
+int main()
+{
+	// constructor ( yapýcý metotlar) overloading iþlemleri
+	Kisi nesne1; // otomatik sýnýfýn ayný isminden olan metot çalýsýr burda kisi adlý sýnýf içini doldurmamýs olsakda arkada boþ çalýsýr
+    nesne1.ad="oguz";
+	nesne1.soyad="kademli";
+	nesne1.yas=20;
+	Kisi nesne2("oguz"); // parametre gondererek yapýcý metotu çalýsstýrdýk
+	return 0;
+};
